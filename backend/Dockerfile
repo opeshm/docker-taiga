@@ -32,7 +32,7 @@ RUN pip wheel --wheel-dir=./taiga_python_dependencies -r requirements.txt
 
 
 # FINAL IMAGE
-FROM python:3.6-alpine3.6
+FROM arm32v6/python:3.6-alpine3.6
 
 LABEL maintainer="douglasmirandasilva@gmail.com"
 LABEL taiga_version="tag:3.1.3"
