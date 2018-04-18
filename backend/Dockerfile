@@ -1,4 +1,4 @@
-FROM arm32v3/python:3.6-alpine3.6 as BUILDER
+FROM arm32v6/python:3.6-alpine3.6 as BUILDER
 
 ENV TAIGA_VERSION 3.1.3
 

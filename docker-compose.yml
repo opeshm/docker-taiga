@@ -7,7 +7,7 @@ volumes:
 
 services:
   postgresql:
-    image: arm32v3/postgres:10-alpine
+    image: arm32v6/postgres:10-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - postgres_backup:/backups
@@ -17,10 +17,10 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
   redis:
-    image: arm32v3/redis:4.0-alpine
+    image: arm32v6/redis:4.0-alpine
 
   rabbitmq:
-    image: arm32v3/rabbitmq:3.6-alpine
+    image: arm32v6/rabbitmq:3.6-alpine
     hostname: taiga_rabbitmq
     environment:
       - RABBITMQ_ERLANG_COOKIE=${RABBITMQ_ERLANG_COOGKIE}
