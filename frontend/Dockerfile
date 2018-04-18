@@ -1,4 +1,4 @@
-FROM nginx:1.13-alpine
+FROM arm64v8/nginx:1.13-alpine
 
 LABEL maintainer="douglasmirandasilva@gmail.com"
 LABEL taiga_version="tag:3.1.3-stable"
